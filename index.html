@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c78a256406.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+      };
+    </script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+      body {
+        font-family: "Righteous", sans-serif;
+        background: linear-gradient(
+          180deg,
+          #d9ecff 0%,
+          rgba(240, 243, 255, 0) 127.78%
+        );
+      }
+      @keyframes marquee {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+
+      .animate-marquee {
+        animation: marquee 20s linear infinite;
+      }
+
+      .animate-marquee:hover {
+        animation-play-state: paused;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header
+      class="flex justify-between items-center bg-white px-20 sticky top-0"
+    >
+      <div>
+        <img src="./images/Askmeidentity 2.png" alt="logo" class="h-26 w-36" />
+      </div>
+      <nav>
+        <ul class="flex justify-between items-center gap-5">
+          <li>
+            <a href="#home" class="text-gray-800 hover:text-blue-500">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="text-gray-800 hover:text-blue-500">About</a>
+          </li>
+          <li>
+            <a href="#courses" class="text-gray-800 hover:text-blue-500"
+              >Courses</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="text-gray-800 hover:text-blue-500"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="flex justify-between items-center gap-5">
+        <i class="fa-sharp fa-solid fa-basket-shopping"></i>
+        <i class="fa-regular fa-circle-user"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="flex gap-5 p-4">
+        <button>Login</button>
+        <button
+          class="text-white bg-gradient-to-r from-[#083F9B] to-[#7F56D9] px-4 py-2 rounded-lg"
+        >
+          Signup
+        </button>
+      </div>
+    </header>
+
+    <section
+      id="hero-section"
+      class="bg-gradient-to-r from-purple-900 to-blue-600"
+    >
+      <div class="flex md:flex-row sm:flex-col gap-5">
+        <div class="flex flex-1 flex-col gap-5 m-40">
+          <p class="text-white text-sm font-normal">
+            SUCCESSFUL COACHES ARE VISIONARIES
+          </p>
+          <h1 class="text-white text-6xl font-normal text-left w-[80%]">
+            Good coaching is good teaching & nothing else.
+          </h1>
+          <div class="flex gap-4 text-white items-center">
+            <button
+              class="border p-2 rounded-lg text-white hover:bg-white hover:text-black"
+            >
+              View courses
+            </button>
+            <p>Get Free Consultation</p>
+          </div>
+          <div class="relative w-[70%]">
+            <input
+              type="text"
+              placeholder="What do you want to learn today?"
+              class="w-full px-4 py-2 pr-16 rounded-lg border border-gray-300"
+            />
+            <button
+              class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-[#083F9B] to-[#7F56D9] text-white px-4 py-1 rounded-lg"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i> Search
+            </button>
+          </div>
+        </div>
+        <div
+          class="px-4 border-s-2 border-blue-300 text-sm w-[272px] h-[96px] text-white absolute top-[250px] left-[750px] z-50"
+        >
+          <p class="text-sm text-white font-semibold">Shyam</p>
+          <p class="font-normal">
+            In a coaching role, you ask the questions and rely more on your
+            staff, who become the experts, to provide the information.
+          </p>
+        </div>
+        <div class="flex flex-1 justify-center items-end">
+          <div class="retative flex items-center justify-center">
+            <img
+              src="./images/Ellipse 8324.png"
+              alt="background-img"
+              class="absolute w-[740px] h-[769px] top-[100px]"
+            />
+            <img
+              src="./images/hero.png"
+              alt="hero-img"
+              class="relative w-[400px] h-[650px] object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="flex justify-around items-center h-[120px] w-full bg-gradient-to-b from-[#2E08C7] to-[#7E08C7] overflow-hidden whitespace-nowrap"
+    >
+      <div
+        class="flex gap-16 w-full justify-around items-center animate-marquee"
+      >
+        <img src="./images/marquee/brand1.png" alt="marquee-1" />
+        <img src="./images/marquee/brand3.png" alt="marquee-2" />
+        <img src="./images/marquee/brand5.png" alt="marquee-3" />
+        <img src="./images/marquee/brand6.png" alt="marquee-4" />
+        <img src="./images/marquee/brand1.png" alt="marquee-1" />
+        <img src="./images/marquee/brand3.png" alt="marquee-2" />
+        <img src="./images/marquee/brand5.png" alt="marquee-3" />
+        <img src="./images/marquee/brand6.png" alt="marquee-4" />
+        <img src="./images/marquee/brand1.png" alt="marquee-1" />
+        <img src="./images/marquee/brand3.png" alt="marquee-2" />
+        <img src="./images/marquee/brand5.png" alt="marquee-3" />
+        <img src="./images/marquee/brand6.png" alt="marquee-4" />
+      </div>
+    </section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <footer></footer>
+  </body>
+</html>
